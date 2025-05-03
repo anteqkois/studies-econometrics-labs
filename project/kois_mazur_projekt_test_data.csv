@@ -1,0 +1,276 @@
+Company,Product,TypeName,Inches,Ram,OS,Weight,Price_euros,Screen,ScreenW,ScreenH,Touchscreen,IPSpanel,RetinaDisplay,CPU_company,CPU_freq,CPU_model,PrimaryStorage,SecondaryStorage,PrimaryStorageType,SecondaryStorageType,GPU_company,GPU_model
+Acer,Nitro 5,Gaming,15.6,8,Windows 10,2.7,1260.0,Full HD,1920,1080,No,Yes,No,Intel,2.8,Core i7 7700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1050
+HP,ENVY -,Notebook,13.3,8,Windows 10,1.34,1189.0,Full HD,1920,1080,No,Yes,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+Dell,Vostro 3568,Notebook,15.6,4,Windows 10,2.18,547.0,Standard,1366,768,No,No,No,Intel,2.4,Core i3 7100U,128,0,SSD,No,Intel,HD Graphics 620
+HP,Probook 440,Notebook,14.0,4,Windows 10,1.64,779.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,500,0,HDD,No,Intel,HD Graphics 620
+Toshiba,Portege Z30-C-16H,Notebook,13.3,4,Windows 10,1.2,1195.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,128,0,SSD,No,Intel,HD Graphics 520
+HP,EliteBook 840,Notebook,14.0,4,Windows 10,1.48,1099.99,Standard,1366,768,No,No,No,Intel,2.4,Core i5 6300U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ProBook 640,Notebook,14.0,4,Windows 10,1.95,1205.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+HP,EliteBook 1040,Ultrabook,14.0,8,Windows 7,1.43,1449.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6600U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ProBook 440,Notebook,14.0,8,Windows 10,1.64,1049.26,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Nvidia,GeForce 930MX
+HP,Probook 440,Notebook,14.0,4,Windows 10,1.64,684.0,Standard,1366,768,No,No,No,Intel,2.4,Core i3 7100U,500,0,HDD,No,Intel,HD Graphics 620
+Dell,Inspiron 7567,Gaming,15.6,8,Windows 10,2.65,949.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7300HQ,1024,0,Hybrid,No,Nvidia,GeForce GTX 1050
+HP,EliteBook 820,Ultrabook,12.5,4,Windows 10,1.26,1539.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,500,0,HDD,No,Intel,HD Graphics 620
+HP,Elitebook 840,Notebook,14.0,4,Windows 10,1.48,1590.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+HP,EliteBook 840,Ultrabook,14.0,8,Windows 10,1.54,1887.21,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+HP,Probook 430,Notebook,13.3,4,Windows 10,1.49,800.0,Standard,1366,768,No,No,No,Intel,2.4,Core i3 7100U,500,0,HDD,No,Intel,HD Graphics 620
+Toshiba,Portege A30-C-1CZ,Notebook,13.3,8,Windows 10,1.5,1210.0,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ProBook 450,Notebook,15.6,4,Windows 10,2.04,769.99,Standard,1366,768,No,No,No,Intel,2.4,Core i3 7100U,256,0,SSD,No,Intel,HD Graphics 620
+Lenovo,ThinkPad P70,Notebook,17.3,16,Windows 7,2.4,2968.0,4K Ultra HD,3840,2160,No,Yes,No,Intel,2.7,Core i7 6820HQ,512,0,SSD,No,Nvidia,Quadro 3000M
+Toshiba,Tecra Z40-C-12Z,Notebook,14.0,8,Windows 10,1.47,1490.0,Full HD,1920,1080,No,Yes,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+HP,EliteBook 1040,Notebook,14.0,8,Windows 10,1.43,2229.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Dell,Inspiron 5568,2 in 1 Convertible,15.6,4,Windows 10,2.08,795.99,Full HD,1920,1080,Yes,Yes,No,Intel,2.3,Core i3 6100U,1024,0,HDD,No,Intel,HD Graphics 520
+Toshiba,Portégé Z30-C-16K,Ultrabook,13.3,8,Windows 10,1.2,1590.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+HP,Spectre 13-V100nv,Notebook,13.3,8,Windows 10,1.11,1149.0,Full HD,1920,1080,No,Yes,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+HP,ProBook 440,Notebook,14.0,8,Windows 10,1.64,1185.43,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Nvidia,GeForce 930MX
+Dell,Latitude E5570,Notebook,15.6,8,Windows 10,2.09,1046.44,Full HD,1920,1080,No,No,No,Intel,2.4,Core i5 6300U,500,0,HDD,No,Intel,HD Graphics 520
+HP,Elitebook 820,Ultrabook,12.5,4,Windows 10,1.26,1559.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+HP,ProBook 650,Notebook,14.0,4,Windows 10,2.31,1189.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,500,0,HDD,No,Intel,HD Graphics 620
+HP,ProBook 640,Notebook,14.0,4,Windows 10,1.95,1060.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,500,0,HDD,No,Intel,HD Graphics 620
+Dell,XPS 13,Ultrabook,13.3,8,Windows 10,1.29,1624.0,Quad HD+,3200,1800,Yes,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+HP,Probook 470,Notebook,17.3,8,Windows 10,2.63,1080.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Nvidia,GeForce 930MX
+HP,ProBook 440,Notebook,14.0,4,Windows 10,1.64,973.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+Acer,Aspire 3,Notebook,15.6,6,Windows 10,2.1,409.0,Standard,1366,768,No,No,No,AMD,3.0,A9-Series 9420,1024,0,HDD,No,AMD,Radeon R5
+MSI,GL72M 7RDX,Gaming,17.3,8,Windows 10,2.7,1191.8,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1050
+HP,Probook 640,Notebook,14.0,8,Windows 7,1.95,1195.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+HP,EliteBook 850,Notebook,15.6,8,Windows 10,1.84,1228.99,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+HP,EliteBook 820,Ultrabook,12.5,8,Windows 10,1.26,1349.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ProBook 450,Notebook,15.6,4,Windows 10,2.04,742.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,500,0,HDD,No,Intel,HD Graphics 620
+Toshiba,Tecra Z40-C-136,Ultrabook,14.0,8,Windows 10,1.47,1725.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6600U,256,0,SSD,No,Intel,HD Graphics 520
+Dell,Latitude E5570,Notebook,15.6,8,Windows 7,2.09,1062.95,Full HD,1920,1080,No,No,No,Intel,2.4,Core i5 6300U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ProBook 440,Notebook,14.0,8,Windows 10,1.64,1010.51,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+Lenovo,Yoga 500-15ISK,2 in 1 Convertible,15.6,4,Windows 10,1.8,847.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Vero,V142 (X5-Z8350/2GB/32GB/W10),Notebook,14.0,2,Windows 10,1.45,210.8,Standard,1366,768,No,No,No,Intel,1.44,Atom X5-Z8350,32,0,Flash Storage,No,Intel,HD Graphics 400
+Toshiba,Tecra A50-C-218,Notebook,15.6,16,Windows 10,2.4,1425.0,Full HD,1920,1080,No,Yes,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Nvidia,GeForce 930M
+Lenovo,Thinkpad L560,Notebook,15.6,8,Windows 10,2.3,1049.6,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+HP,EliteBook 840,Notebook,14.0,4,Windows 10,1.54,1000.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+HP,EliteBook 850,Notebook,15.6,8,Windows 10,1.84,2103.34,Full HD,1920,1080,No,No,No,Intel,2.4,Core i5 6300U,256,500,SSD,HDD,Intel,HD Graphics 520
+HP,EliteBook 1040,Notebook,14.0,8,Windows 7,1.43,1469.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+MSI,GT72S Dominator,Gaming,17.3,16,Windows 10,3.78,1545.64,Full HD,1920,1080,No,Yes,No,Intel,2.7,Core i7 6820HK,256,1024,SSD,HDD,Nvidia,GeForce GTX 980M
+Lenovo,IdeaPad Y900-17ISK,Gaming,17.3,16,Windows 10,4.6,2289.99,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 980M
+Asus,Chromebook C202SA,Netbook,11.6,4,Chrome OS,1.2,287.9,Standard,1366,768,No,No,No,Intel,1.6,Celeron Dual Core N3060,16,0,Flash Storage,No,Intel,HD Graphics 400
+Lenovo,ThinkPad X1,Notebook,14.0,16,Windows 7,1.1,2620.0,Standard,2560,1440,No,Yes,No,Intel,2.6,Core i7 6600U,256,0,SSD,No,Intel,HD Graphics 520
+HP,Noteb Pav,Notebook,15.6,8,Windows 10,1.91,979.0,Full HD,1920,1080,No,Yes,No,Intel,2.7,Core i7 7500U,1024,0,HDD,No,Nvidia,GeForce 940MX
+Dell,Inspiron 5578,2 in 1 Convertible,15.6,8,Windows 10,2.3,1094.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.7,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+HP,ProBook 450,Notebook,15.6,4,Windows 10,2.04,979.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+Dell,XPS 13,Ultrabook,13.3,16,Windows 10,1.2,2254.0,Quad HD+,3200,1800,Yes,No,No,Intel,2.7,Core i7 7500U,1024,0,SSD,No,Intel,HD Graphics 620
+HP,ProBook 650,Notebook,15.6,4,Windows 10,2.31,705.15,Standard,1366,768,No,No,No,Intel,2.3,Core i3 6100U,500,0,HDD,No,Intel,HD Graphics 520
+HP,250 G5,Notebook,15.6,4,No OS,1.96,499.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,500,0,HDD,No,Intel,HD Graphics 620
+Acer,Aspire ES1-523,Notebook,15.6,8,Windows 10,2.4,449.0,Standard,1366,768,No,No,No,AMD,2.2,A8-Series 7410,1024,0,HDD,No,AMD,Radeon R5
+Dell,Inspiron 7378,2 in 1 Convertible,13.3,12,Windows 10,1.6,1299.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Intel,HD Graphics 620
+MSI,GT62VR 6RD,Gaming,15.6,16,Windows 10,2.94,1819.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+HP,ProBook 450,Notebook,15.6,8,Windows 10,2.04,1070.0,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Intel,HD Graphics 620
+Asus,Rog G752VL-GC088D,Gaming,17.3,16,No OS,4.0,998.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,1024,0,HDD,No,Nvidia,GeForce GTX 965M
+Dell,Inspiron 3567,Notebook,15.6,4,Windows 10,2.25,559.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,1024,0,HDD,No,Intel,HD Graphics
+Dell,Inspiron 5567,Notebook,15.6,16,Windows 10,2.32,989.99,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,2048,0,HDD,No,AMD,Radeon R7 M445
+MSI,GS63VR 6RF,Gaming,15.6,16,Windows 10,1.8,1929.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+Dell,XPS 13,Ultrabook,13.3,8,Windows 10,1.29,1458.0,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Intel,HD Graphics 620
+Asus,ROG G701VO,Gaming,17.3,64,Windows 10,3.58,3975.0,Full HD,1920,1080,No,Yes,No,Intel,2.7,Core i7 6820HK,1024,0,SSD,No,Nvidia,GeForce GTX 980 
+Dell,Inspiron 5368,2 in 1 Convertible,13.3,8,Windows 10,1.62,798.01,Full HD,1920,1080,Yes,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Dell,Alienware 15,Gaming,15.6,16,Windows 10,3.21,1329.0,4K Ultra HD,3840,2160,No,No,No,Intel,2.6,Core i7 6700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 970M
+Apple,"MacBook 12""",Ultrabook,12.0,8,Mac OS X,0.92,1300.0,Standard,2304,1440,No,Yes,Yes,Intel,1.1,Core M,256,0,Flash Storage,No,Intel,HD Graphics 515
+Dell,Latitude 3570,Notebook,15.6,4,Windows 10,2.06,481.98,Standard,1366,768,No,No,No,Intel,2.3,Core i3 6100U,500,0,HDD,No,Intel,HD Graphics 520
+HP,ProBook 650,Notebook,15.6,4,Windows 10,2.31,1199.0,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+HP,EliteBook 820,Ultrabook,12.5,8,Windows 7,1.26,1199.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ProBook 430,Notebook,13.3,8,Windows 10,1.49,1090.0,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Intel,HD Graphics 620
+Lenovo,ThinkPad Yoga,Ultrabook,12.5,8,Windows 10,1.3,1713.49,Full HD,1920,1080,Yes,Yes,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Lenovo,IdeaPad 300-17ISK,Notebook,17.3,8,Windows 10,3.0,659.0,Standard,1600,900,No,No,No,Intel,2.3,Core i5 6200U,1024,0,HDD,No,AMD,Radeon R5 M330
+Lenovo,Ideapad 700-15ISK,Notebook,15.6,4,Windows 10,2.3,977.0,Full HD,1920,1080,No,Yes,No,Intel,2.3,Core i5 6300HQ,1024,0,HDD,No,Nvidia,GeForce GTX 950M
+MSI,GT72VR Dominator,Gaming,17.3,16,Windows 10,3.78,2499.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1070
+Lenovo,V110-15ISK (i5-6200U/4GB/500GB/W10),Notebook,15.6,4,Windows 10,2.1,540.0,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+HP,Probook 650,Notebook,15.6,4,Windows 7,2.31,940.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+Lenovo,Yoga 900S-12ISK,Ultrabook,12.5,8,Windows 10,0.99,1399.0,Standard,2560,1440,Yes,Yes,No,Intel,1.2,Core M 6Y75,512,0,SSD,No,Intel,HD Graphics 515
+Lenovo,IdeaPad Y900-17ISK,Gaming,17.3,32,Windows 10,4.6,3240.0,Full HD,1920,1080,No,Yes,No,Intel,2.7,Core i7 6820HK,512,1024,SSD,Hybrid,Nvidia,GeForce GTX 980M
+Lenovo,Yoga Book,2 in 1 Convertible,10.1,4,Windows 10,0.69,646.27,Standard,1920,1200,Yes,Yes,No,Intel,1.44,Atom x5-Z8550,64,0,Flash Storage,No,Intel,HD Graphics 400
+HP,Spectre x360,Ultrabook,13.3,16,Windows 10,1.3,2049.0,4K Ultra HD,3840,2160,No,Yes,No,Intel,2.7,Core i7 7500U,512,0,SSD,No,Intel,HD Graphics 620
+Dell,Vostro 3568,Notebook,15.6,8,Windows 10,2.18,750.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+HP,EliteBook 840,Notebook,14.0,4,Windows 7,1.54,1030.99,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+HP,ZBook 15u,Workstation,15.6,8,Windows 7,1.9,1495.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,AMD,FirePro W4190M
+Lenovo,ThinkPad T460,Notebook,14.0,8,Windows 7,1.7,1199.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,180,0,SSD,No,Intel,HD Graphics 520
+HP,Chromebook 13,Notebook,13.3,4,Chrome OS,1.29,615.0,Quad HD+,3200,1800,No,No,No,Intel,1.5,Pentium Dual Core 4405Y,32,0,Flash Storage,No,Intel,HD Graphics 515
+Acer,Aspire ES1-523,Notebook,15.6,4,Windows 10,2.4,387.0,Standard,1366,768,No,No,No,AMD,2.2,A8-Series 7410,500,0,HDD,No,AMD,Radeon R5
+Dell,Inspiron 3552,Notebook,15.6,4,Linux,2.2,393.49,Standard,1366,768,No,No,No,Intel,1.6,Pentium Quad Core N3700,500,0,HDD,No,Intel,HD Graphics
+HP,250 G6,Notebook,15.6,4,No OS,1.86,345.99,Standard,1366,768,No,No,No,Intel,2.0,Core i3 6006U,1024,0,HDD,No,Intel,HD Graphics 520
+Asus,Rog GL702VM-GC354T,Gaming,17.3,8,Windows 10,2.7,1599.0,Full HD,1920,1080,No,Yes,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+Dell,Inspiron 5370,Ultrabook,13.3,4,Windows 10,1.4,818.35,Full HD,1920,1080,No,Yes,No,Intel,1.6,Core i5 8250U,256,0,SSD,No,AMD,Radeon 530
+HP,Elitebook 820,Netbook,12.5,4,Windows 7,2.4,1599.0,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,128,0,SSD,No,Intel,HD Graphics 520
+Acer,Aspire F5-573G,Notebook,15.6,8,Windows 10,2.4,799.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,1024,SSD,HDD,Nvidia,GeForce GTX 950M
+Dell,Inspiron 5567,Notebook,15.6,8,Windows 10,2.36,638.8,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,1024,0,HDD,No,AMD,Radeon R7 M445
+MSI,GS70 Stealth,Gaming,17.3,8,Windows 10,2.6,1599.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,256,0,SSD,No,Nvidia,GeForce GTX 965M
+HP,250 G5,Notebook,15.6,4,Windows 10,1.96,500.0,Standard,1366,768,No,No,No,Intel,1.6,Pentium Quad Core N3710,1024,0,HDD,No,Intel,HD Graphics 405
+Asus,G752VY-GC162T (i7-6700HQ/16GB/1TB,Gaming,17.3,16,Windows 10,4.3,2299.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 980M
+Dell,Latitude E5270,Ultrabook,12.5,4,Windows 7,1.5,1135.15,Standard,1366,768,No,No,No,Intel,2.3,Core i3 6100U,500,0,HDD,No,Intel,HD Graphics 520
+Dell,Latitude E5270,Ultrabook,12.5,4,Windows 7,1.5,1166.97,Standard,1366,768,No,No,No,Intel,2.3,Core i3 6100U,128,0,SSD,No,Intel,HD Graphics 520
+Acer,Chromebook 15,Notebook,15.6,4,Chrome OS,2.2,209.0,Standard,1366,768,No,No,No,Intel,1.5,Celeron Dual Core 3205U,16,0,SSD,No,Intel,HD Graphics
+HP,ZBook 17,Workstation,17.3,8,Windows 7,3.0,2899.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,1024,0,HDD,No,AMD,FirePro W6150M
+Lenovo,Legion Y520-15IKBN,Gaming,15.6,16,Windows 10,2.4,1199.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,512,0,SSD,No,Nvidia,GeForce GTX 1050 Ti
+Dell,Latitude E5270,Ultrabook,12.5,8,Windows 7,1.5,1413.1,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+MSI,GE72 Apache,Gaming,17.3,8,Windows 10,2.9,1511.19,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 960M
+Lenovo,Yoga 500-15ISK,2 in 1 Convertible,15.6,4,Windows 10,2.1,867.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+HP,15-bw011nv (A6-9220/4GB/1TB/FHD/W10),Notebook,15.6,4,Windows 10,2.1,398.0,Full HD,1920,1080,No,No,No,AMD,2.5,A6-Series 9220,1024,0,HDD,No,AMD,Radeon R4
+Asus,Rog GL552VW-CN470T,Gaming,15.6,16,Windows 10,2.59,1339.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 960M
+HP,EliteBook 1030,Notebook,13.3,8,Windows 10,1.16,1699.0,Quad HD+,3200,1800,Yes,No,No,Intel,1.1,Core M 6Y54,256,0,SSD,No,Intel,HD Graphics 515
+Dell,Vostro 3559,Notebook,15.6,4,Windows 7,2.24,769.15,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,AMD,Radeon R5 M315
+Lenovo,V110-15ISK (i3-6006U/4GB/128GB/W10),Notebook,15.6,4,Windows 10,2.1,429.0,Standard,1366,768,No,No,No,Intel,2.0,Core i3 6006U,128,0,SSD,No,Intel,HD Graphics 520
+HP,Spectre Pro,Ultrabook,13.3,8,Windows 10,1.16,1969.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,512,0,SSD,No,Intel,HD Graphics 520
+Lenovo,Yoga Book,2 in 1 Convertible,10.1,4,Android,0.69,549.0,Standard,1920,1200,Yes,Yes,No,Intel,1.44,Atom x5-Z8550,64,0,Flash Storage,No,Intel,HD Graphics 400
+Dell,XPS 13,Ultrabook,13.3,8,Windows 10,1.23,1379.0,Full HD,1920,1080,No,No,No,Intel,2.4,Core i7 7560U,256,0,SSD,No,Intel,Iris Plus Graphics 640
+Lenovo,IdeaPad Y900-17ISK,Gaming,17.3,16,Windows 10,4.6,2749.99,Full HD,1920,1080,No,Yes,No,Intel,2.7,Core i7 6820HK,256,1024,SSD,Hybrid,Nvidia,GeForce GTX 980M
+Razer,Blade Stealth,Ultrabook,12.5,8,Windows 10,1.25,1029.0,4K Ultra HD,3840,2160,Yes,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Toshiba,Portege X30-D-10K,Ultrabook,13.3,16,Windows 10,1.05,2226.0,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,512,0,SSD,No,Intel,HD Graphics 620
+Asus,Rog GL752VW-T4308T,Gaming,17.3,8,Windows 10,3.52,1312.49,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 960M
+Vero,V131 (X5-Z8350/4GB/32GB/FHD/W10),Notebook,13.3,4,Windows 10,1.35,196.0,Full HD,1920,1080,No,No,No,Intel,1.44,Atom X5-Z8350,32,0,Flash Storage,No,Intel,HD Graphics 400
+HP,Spectre Pro,Notebook,13.3,8,Windows 10,1.16,1690.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+HP,EliteBook 1040,Notebook,14.0,8,Windows 7,1.43,1513.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+Dell,Latitude E5570,Notebook,15.6,4,Linux,2.09,523.63,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+Asus,VivoBook Max,Notebook,15.6,4,Windows 10,2.0,435.0,Standard,1366,768,No,No,No,Intel,2.4,Core i3 7100U,1024,0,HDD,No,Intel,HD Graphics 620
+Lenovo,ThinkPad Yoga,2 in 1 Convertible,14.0,8,Windows 10,1.8,1669.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Lenovo,Yoga Book,2 in 1 Convertible,10.1,4,Windows 10,0.69,479.0,Standard,1920,1200,Yes,Yes,No,Intel,1.44,Atom x5-Z8550,64,0,Flash Storage,No,Intel,HD Graphics 400
+HP,EliteBook 820,Ultrabook,12.5,8,Windows 7,1.26,1895.0,Standard,1366,768,No,No,No,Intel,2.4,Core i5 6300U,256,0,SSD,No,Intel,HD Graphics 520
+Lenovo,Legion Y520-15IKBN,Gaming,15.6,8,No OS,2.4,989.0,Full HD,1920,1080,No,Yes,No,Intel,2.5,Core i5 7300HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+HP,Omen -,Gaming,17.3,8,Windows 10,3.35,1129.0,Full HD,1920,1080,No,Yes,No,Intel,2.3,Core i5 6300HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+HP,15-bs078cl (i7-7500U/8GB/2TB/W10),Notebook,15.6,8,Windows 10,2.04,629.0,Standard,1366,768,No,No,No,Intel,2.7,Core i7 7500U,2048,0,HDD,No,Intel,HD Graphics 620
+Lenovo,ThinkPad P40,2 in 1 Convertible,14.0,8,Windows 7,1.8,2050.38,Full HD,1920,1080,Yes,Yes,No,Intel,2.6,Core i7 6600U,512,0,SSD,No,Nvidia,Quadro M500M
+Asus,L403NA-GA013TS (N3350/4GB/32GB/W10),Notebook,14.0,4,Windows 10,1.5,278.0,Standard,1366,768,No,No,No,Intel,1.1,Celeron Dual Core N3350,32,0,Flash Storage,No,Intel,HD Graphics 500
+HP,250 G6,Ultrabook,15.6,8,Windows 10,1.84,752.0,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Intel,HD Graphics 620
+Acer,Aspire E5-576G,Notebook,15.6,4,Windows 10,2.23,616.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,1024,0,HDD,No,Nvidia,GeForce 940MX
+Lenovo,IdeaPad 500-15ISK,Notebook,15.6,16,Windows 10,2.5,1099.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,1024,0,Hybrid,No,AMD,Radeon R7 M360
+HP,ZBook 17,Workstation,17.3,8,Windows 7,3.0,3949.4,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,256,0,SSD,No,Nvidia,Quadro M3000M
+Dell,Inspiron 5567,Notebook,15.6,8,Windows 10,2.5,784.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,1024,0,HDD,No,AMD,Radeon R7 M445
+MSI,GT72S Dominator,Gaming,17.3,16,Windows 10,3.78,2399.0,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 6820HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 980M
+HP,EliteBook 850,Ultrabook,15.6,8,Windows 7,1.88,2171.72,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Lenovo,ThinkPad X1,2 in 1 Convertible,14.0,16,Windows 10,2.8,2440.0,Standard,2560,1440,Yes,Yes,No,Intel,2.6,Core i7 6600U,512,0,SSD,No,Intel,HD Graphics 520
+MSI,GP62M 7RDX,Gaming,15.6,8,Windows 10,2.4,1142.8,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1050
+HP,Spectre Pro,2 in 1 Convertible,13.3,8,Windows 10,1.48,1629.0,Full HD,1920,1080,Yes,No,No,Intel,2.4,Core i5 6300U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ZBook 15,Workstation,15.6,8,Windows 7,2.59,2229.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,256,0,SSD,No,Nvidia,Quadro M1000M
+HP,Spectre Pro,2 in 1 Convertible,13.3,8,Windows 10,1.48,1799.0,Standard,2560,1440,Yes,No,No,Intel,2.6,Core i7 6600U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ZBook Studio,Workstation,15.6,8,Windows 7,2.0,1899.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,256,0,SSD,No,Nvidia,Quadro M1000M
+HP,EliteBook 820,Ultrabook,12.5,8,Windows 7,1.26,2296.95,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Dell,Vostro 5568,Notebook,15.6,8,Windows 10,2.18,1009.9,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Nvidia,GeForce 940MX
+HP,EliteBook 850,Notebook,15.6,8,Windows 7,1.88,1579.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+Lenovo,ThinkPad X1,2 in 1 Convertible,14.0,8,Windows 10,1.27,2339.0,Standard,2560,1440,Yes,Yes,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Lenovo,V110-15ISK (i3-6006U/4GB/1TB/No,Notebook,15.6,4,No OS,1.9,339.0,Standard,1366,768,No,No,No,Intel,2.0,Core i3 6006U,1024,0,HDD,No,Intel,HD Graphics 520
+HP,15-BA015wm (E2-7110/4GB/500GB/W10),Notebook,15.6,4,Windows 10,1.86,297.0,Standard,1366,768,No,No,No,AMD,1.8,E-Series 7110,500,0,HDD,No,AMD,Radeon R2 Graphics
+Lenovo,B51-80 (i5-6200U/8GB/1TB/Radeon,Notebook,15.6,8,No OS,2.32,599.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,1024,0,HDD,No,AMD,Radeon R5 M330
+Dell,Inspiron 7567,Gaming,15.6,8,Windows 10,2.62,1199.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,1024,0,HDD,No,Nvidia,GeForce GTX 1050Ti
+Dell,XPS 15,Notebook,15.6,8,Windows 10,2.04,2250.68,4K Ultra HD,3840,2160,Yes,Yes,No,Intel,2.3,Core i5 6300HQ,256,0,SSD,No,Nvidia,GeForce 960M
+HP,15-bw002nv (A6-9220/4GB/256GB/Radeon,Notebook,15.6,4,Windows 10,1.91,478.89,Full HD,1920,1080,No,No,No,AMD,2.5,A6-Series A6-9220,256,0,SSD,No,AMD,Radeon 520
+MSI,GP72M 7REX,Gaming,17.3,16,Windows 10,2.7,1492.8,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1050 Ti
+Lenovo,ThinkPad T460s,Ultrabook,14.0,12,Windows 7,1.4,2299.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6600U,512,0,SSD,No,Intel,HD Graphics 520
+Lenovo,B51-80 (i5-6200U/8GB/1008GB/Radeon,Notebook,15.6,8,Windows 10,2.5,788.49,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,1024,0,Hybrid,No,AMD,Radeon R5 M330
+HP,Spectre Pro,2 in 1 Convertible,13.3,8,Windows 10,1.48,2041.0,Standard,2560,1440,Yes,No,No,Intel,2.6,Core i7 6600U,512,0,SSD,No,Intel,HD Graphics 520
+Lenovo,ThinkPad T460,Ultrabook,14.0,8,Windows 7,1.7,1499.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6600U,256,0,SSD,No,Intel,HD Graphics 520
+MSI,GS40 Phantom,Gaming,14.0,16,Windows 10,1.7,1769.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 970M
+HP,Pavilion 15-cb003nv,Gaming,15.6,8,Windows 10,2.62,899.0,Full HD,1920,1080,No,Yes,No,Intel,2.8,Core i7 7700HQ,1024,0,HDD,No,Nvidia,GeForce GTX 1050
+Lenovo,IdeaPad 310-15ISK,Notebook,15.6,8,Windows 10,2.2,459.0,Standard,1366,768,No,No,No,Intel,2.0,Core i3 6006U,1024,0,HDD,No,Intel,HD Graphics 520
+HP,250 G4,Notebook,15.6,4,No OS,2.1,476.99,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+Dell,Inspiron 7567,Gaming,15.6,8,Windows 10,2.62,1498.0,4K Ultra HD,3840,2160,No,No,No,Intel,2.8,Core i7 7700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1050 Ti
+Lenovo,ThinkPad T570,Notebook,15.6,8,Windows 10,1.95,1390.0,Full HD,1920,1080,No,Yes,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+Lenovo,320-15ISK (i3-6006U/4GB/1TB/GeForce,Notebook,15.6,4,Windows 10,2.2,468.0,Full HD,1920,1080,No,No,No,Intel,2.0,Core i3 6006U,1024,0,HDD,No,Nvidia,GeForce 920MX 
+HP,Stream 14-AX000nv,Notebook,14.0,2,Windows 10,1.44,249.0,Standard,1366,768,No,No,No,Intel,1.6,Celeron Dual Core N3060,32,0,Flash Storage,No,Intel,HD Graphics 400
+MSI,PL60 7RD,Gaming,15.6,8,Windows 10,2.2,839.0,Full HD,1920,1080,No,Yes,No,Intel,2.7,Core i7 7500U,1024,0,HDD,No,Nvidia,GeForce GTX 1050
+HP,250 G5,Notebook,15.6,8,Windows 10,1.96,679.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+HP,ProBook 450,Notebook,15.6,16,Windows 10,2.1,1159.0,Full HD,1920,1080,No,No,No,Intel,1.8,Core i7 8550U,512,0,SSD,No,Intel,UHD Graphics 620
+Asus,X553SA-XX021T (N3050/4GB/500GB/W10),Notebook,15.6,4,Windows 10,2.2,369.0,Standard,1366,768,No,No,No,Intel,1.6,Celeron Dual Core N3050,500,0,HDD,No,Intel,HD Graphics
+Lenovo,V110-15ISK (i5-6200U/4GB/500GB/No,Notebook,15.6,4,No OS,2.1,398.0,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+Lenovo,IdeaPad 510-15IKB,Notebook,15.6,8,No OS,2.2,709.0,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,1024,0,HDD,No,Nvidia,GeForce 940MX
+Asus,UX410UA-GV097T (i3-7100U/4GB/256GB/FHD/W10),Notebook,14.0,4,Windows 10,2.0,769.0,Full HD,1920,1080,No,No,No,Intel,2.4,Core i3 7100U,256,0,SSD,No,Intel,HD Graphics 620
+Lenovo,B51-80 (i7-6500U/4GB/1008GB/FHD/W7),Notebook,15.6,4,Windows 7,2.32,825.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,1024,0,Hybrid,No,Intel,HD Graphics 520
+Lenovo,IdeaPad Y700-15ISK,Gaming,15.6,16,Windows 10,3.31,1305.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,512,0,SSD,No,Nvidia,GeForce GTX 960
+MSI,GS60 Ghost,Gaming,15.6,16,Windows 10,1.91,2153.37,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 970M
+HP,ProBook 450,Notebook,15.6,4,Windows 10,2.07,650.0,Standard,1366,768,No,No,No,Intel,2.3,Core i3 6100U,500,0,HDD,No,Intel,HD Graphics 520
+Lenovo,ThinkPad X1,2 in 1 Convertible,14.0,8,Windows 10,1.36,1637.0,Standard,2560,1440,Yes,Yes,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+Lenovo,IdeaPad 310-15IKB,Ultrabook,15.6,6,Windows 10,1.54,831.0,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Nvidia,GeForce 920M
+Dell,Vostro 5568,Notebook,15.6,8,Linux,1.98,895.01,Full HD,1920,1080,No,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Nvidia,GeForce GT 940MX
+Acer,Aspire 3,Notebook,15.6,4,Windows 10,2.1,333.0,Standard,1366,768,No,No,No,Intel,2.0,Celeron Dual Core N3350,500,0,HDD,No,Intel,HD Graphics 500
+HP,Pavilion 15-BC000nv,Notebook,15.6,6,Windows 10,2.18,799.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,1024,0,HDD,No,Nvidia,GeForce GTX 960M
+Asus,Rog GL552VW-DM201T,Gaming,15.6,8,Windows 10,2.591,909.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 960M
+Dell,Inspiron 5578,2 in 1 Convertible,15.6,16,Windows 10,2.09,1179.0,Full HD,1920,1080,Yes,No,No,Intel,2.7,Core i7 7500U,512,0,SSD,No,Intel,HD Graphics 620
+Acer,Aspire E5-576G,Notebook,15.6,4,Windows 10,2.23,691.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Nvidia,GeForce 940MX
+Dell,XPS 13,Ultrabook,13.3,8,Linux,1.23,1099.0,Quad HD+,3200,1800,Yes,No,No,Intel,2.4,Core i5 6300U,256,0,SSD,No,Intel,HD Graphics 520
+Acer,Predator G9-793,Gaming,17.3,16,Windows 10,4.2,2599.0,Full HD,1920,1080,No,Yes,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1070
+Lenovo,Legion Y520-15IKBN,Gaming,15.6,8,Windows 10,2.4,819.0,Full HD,1920,1080,No,Yes,No,Intel,2.5,Core i5 7300HQ,1024,0,HDD,No,Nvidia,GeForce GTX 1050
+Samsung,Chromebook Plus,2 in 1 Convertible,12.3,4,Chrome OS,1.15,659.0,Standard,2400,1600,Yes,Yes,No,Samsung,2.0,Cortex A72&A53,32,0,Flash Storage,No,ARM,Mali T860 MP4
+HP,250 G6,Notebook,15.6,4,Windows 10,1.86,485.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,500,0,HDD,No,Intel,HD Graphics 620
+Apple,"MacBook 12""",Ultrabook,12.0,8,Mac OS X,0.92,1163.0,Standard,2304,1440,No,Yes,Yes,Intel,1.1,Core M,256,0,Flash Storage,No,Intel,HD Graphics 5300
+Dell,Inspiron 7378,2 in 1 Convertible,13.3,8,Windows 10,1.6,1199.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+HP,Pavilion Power,Notebook,15.6,12,Windows 10,2.21,1327.0,Full HD,1920,1080,No,Yes,No,Intel,2.8,Core i7 7700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1050
+Lenovo,V110-15ISK (i3-6006U/4GB/1TB/Radeon,Notebook,15.6,4,No OS,1.9,368.0,Standard,1366,768,No,No,No,Intel,2.0,Core i3 6006U,1024,0,HDD,No,AMD,Radeon R5 M430
+Asus,Rog G752VY-GC229T,Gaming,17.3,16,Windows 10,4.3,2150.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,512,1024,SSD,HDD,Nvidia,GeForce GTX 980M
+Acer,Aspire 3,Notebook,15.6,4,Linux,2.1,272.0,Standard,1366,768,No,No,No,Intel,2.0,Celeron Dual Core N3350,1024,0,HDD,No,Intel,HD Graphics 500
+MSI,GS73VR 7RF,Gaming,17.3,16,Windows 10,2.43,2048.9,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+Dell,Inspiron 5567,Notebook,15.6,4,Windows 10,2.3,499.0,Standard,1366,768,No,No,No,Intel,2.0,Core i3 6006U,128,0,SSD,No,AMD,Radeon R7 M440
+Lenovo,IdeaPad 310-15ISK,Notebook,15.6,8,No OS,2.2,629.0,Standard,1366,768,No,No,No,Intel,2.5,Core i7 6500U,500,0,HDD,No,Nvidia,GeForce 920MX
+Dell,Inspiron 5579,2 in 1 Convertible,15.6,16,Windows 10,2.0,1285.0,Full HD,1920,1080,Yes,No,No,Intel,1.8,Core i7 8550U,512,0,SSD,No,Intel,UHD Graphics 620
+Dell,XPS 13,Ultrabook,13.3,16,Windows 10,1.2,2680.0,Quad HD+,3200,1800,Yes,No,No,Intel,2.7,Core i7 7500U,512,0,SSD,No,Intel,HD Graphics 620
+Asus,FX502VM-DM105T (i7-6700HQ/8GB/1TB/GeForce,Gaming,15.6,8,Windows 10,2.2,1169.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,1024,0,HDD,No,Nvidia,GeForce GTX 1060
+Dell,Inspiron 5567,Notebook,15.6,8,Windows 10,2.36,889.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,AMD,Radeon R7 M445
+HP,15-bs025nv (i5-7200U/8GB/256GB/W10),Notebook,15.6,8,Windows 10,1.91,579.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+Lenovo,IdeaPad 320-15AST,Notebook,15.6,4,Windows 10,2.2,299.0,Standard,1366,768,No,No,No,AMD,2.2,E-Series 9000,500,0,HDD,No,AMD,Radeon R2 Graphics
+Acer,Aspire E5-774G,Notebook,17.3,8,Windows 10,3.3,629.0,Standard,1600,900,No,No,No,Intel,2.0,Core i3 6006U,1024,0,HDD,No,Nvidia,GeForce 940MX
+Asus,Rog Strix,Gaming,15.6,16,Windows 10,2.2,2449.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1070
+Apple,"MacBook 12""",Ultrabook,12.0,8,Mac OS X,0.92,1279.0,Standard,2304,1440,No,Yes,Yes,Intel,1.2,Core M,512,0,Flash Storage,No,Intel,HD Graphics 515
+Asus,FX502VM-AS73 (i7-7700HQ/16GB/1TB,Notebook,15.6,16,Windows 10,2.2,1749.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+MSI,GS73VR Stealth,Gaming,17.3,16,Windows 10,2.43,1948.99,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+Dell,Inspiron 7579,2 in 1 Convertible,15.6,8,Windows 10,2.191,999.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+Asus,ROG Strix,Gaming,17.3,16,Windows 10,2.9,1949.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+Acer,C740-C9QX (3205U/2GB/32GB/Chrome,Netbook,11.6,2,Chrome OS,1.3,174.0,Standard,1366,768,No,No,No,Intel,1.5,Celeron Dual Core 3205U,32,0,SSD,No,Intel,HD Graphics
+Acer,E5 774G,Notebook,17.3,4,Windows 10,3.3,598.0,Standard,1600,900,No,No,No,Intel,2.0,Core i3 6006U,1024,0,HDD,No,Nvidia,GeForce 940MX
+Lenovo,IdeaPad 320-17IKB,Notebook,17.3,8,No OS,2.8,539.0,Standard,1600,900,No,No,No,Intel,2.5,Core i5 7200U,1024,0,HDD,No,Intel,HD Graphics 620
+Lenovo,IdeaPad Y700-15ISK,Gaming,15.6,8,Windows 10,2.6,1272.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 960<U+039C>
+Acer,SP714-51 (i7-7Y75/8GB/256GB/FHD/W10),2 in 1 Convertible,14.0,8,Windows 10,1.2,1149.0,Full HD,1920,1080,Yes,Yes,No,Intel,1.3,Core i7 7Y75,256,0,SSD,No,Intel,HD Graphics 615
+Lenovo,Thinkpad T560,Notebook,15.6,8,Windows 10,2.3,1529.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6600U,256,0,SSD,No,Intel,HD Graphics 520
+MSI,GP62MVR 6RF,Gaming,15.6,8,Windows 10,2.2,1476.11,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+HP,15-bw009nv (A12-9720P/6GB/1TB/Radeon,Notebook,15.6,6,Windows 10,2.1,529.0,Full HD,1920,1080,No,No,No,AMD,2.7,A12-Series 9720P,1024,0,HDD,No,AMD,Radeon 530
+Dell,Latitude E7270,Ultrabook,12.5,8,Windows 7,1.26,1713.37,Full HD,1920,1080,Yes,No,No,Intel,2.4,Core i5 6300U,256,0,SSD,No,Intel,HD Graphics 520
+Dell,Inspiron 5578,2 in 1 Convertible,15.0,4,Windows 10,2.08,509.0,Full HD,1920,1080,Yes,No,No,Intel,2.4,Core i3 7100U,500,0,HDD,No,Intel,HD Graphics 620
+Asus,X540SA-RBPDN09 (N3710/4GB/1TB/W10),Notebook,15.6,4,Windows 10,2.65,309.0,Standard,1366,768,No,No,No,Intel,1.6,Pentium Quad Core N3710,1024,0,HDD,No,Intel,HD Graphics 405
+Dell,XPS 13,Ultrabook,13.3,8,Windows 10,1.29,1477.0,Quad HD+,3200,1800,Yes,No,No,Intel,2.7,Core i7 7500U,256,0,SSD,No,Intel,HD Graphics 620
+Dell,Vostro 3568,Notebook,15.6,4,Linux,2.18,521.86,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,1024,0,HDD,No,Intel,HD Graphics 520
+Lenovo,IdeaPad Y700-15ISK,Gaming,15.6,16,Windows 10,2.6,1029.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 960M
+MSI,GL62M 7RDX,Gaming,15.6,8,Windows 10,2.2,1149.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 1050
+Lenovo,ThinkPad Yoga,Netbook,12.5,16,Windows 10,1.3,1650.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.5,Core i7 6500U,512,0,SSD,No,Intel,HD Graphics 520
+Razer,Blade Pro,Gaming,14.0,16,Windows 10,1.95,3499.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,1024,0,SSD,No,Nvidia,GeForce GTX 1060
+Dell,Inspiron 3567,Notebook,15.6,8,Windows 10,2.3,469.01,Standard,1366,768,Yes,No,No,Intel,2.4,Core i3 7100U,1024,0,HDD,No,Intel,HD Graphics 620
+MSI,GE72VR Apache,Gaming,17.3,16,Windows 10,2.7,1598.0,Full HD,1920,1080,No,No,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1060
+Apple,MacBook Air,Ultrabook,11.6,4,Mac OS X,1.08,959.0,Standard,1366,768,No,No,No,Intel,1.6,Core i5,256,0,Flash Storage,No,Intel,HD Graphics 6000
+HP,15-bs023nv (i3-6006U/4GB/1TB/FHD/W10),Notebook,15.6,4,Windows 10,2.1,478.0,Full HD,1920,1080,No,No,No,Intel,2.0,Core i3 6006U,1024,0,HDD,No,Intel,HD Graphics 520
+HP,EliteBook 840,Ultrabook,14.0,8,Windows 7,1.54,2198.19,Standard,2560,1440,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Dell,Vostro 3559,Notebook,15.6,4,Windows 7,2.24,737.0,Standard,1366,768,No,No,No,Intel,2.3,Core i5 6200U,500,0,HDD,No,Intel,HD Graphics 520
+MSI,GL62 6QF,Gaming,15.6,8,Windows 10,2.3,1169.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 960M
+Lenovo,ThinkPad 13,Notebook,13.3,16,Windows 10,1.4,1499.0,Full HD,1920,1080,No,Yes,No,Intel,2.7,Core i7 7500U,512,0,SSD,No,Intel,HD Graphics 620
+Lenovo,IdeaPad 320-15ABR,Notebook,15.6,6,Windows 10,2.2,597.57,Full HD,1920,1080,No,No,No,AMD,3.6,A12-Series 9720P,256,0,SSD,No,AMD,Radeon 530
+Asus,ZenBook UX310UA-WB71,Ultrabook,13.3,8,Windows 10,1.45,1280.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,256,0,SSD,No,Intel,HD Graphics 520
+Acer,Aspire ES1-572,Notebook,15.6,4,Linux,2.4,361.8,Standard,1366,768,No,No,No,Intel,2.0,Core i3 6006U,500,0,HDD,No,Intel,HD Graphics 520
+Dell,Inspiron 7779,2 in 1 Convertible,17.3,16,Windows 10,2.77,1799.0,Full HD,1920,1080,Yes,No,No,Intel,2.7,Core i7 7500U,512,0,SSD,No,Nvidia,GeForce 940MX
+HP,EliteBook 840,Notebook,14.0,4,Windows 7,1.54,1099.99,Full HD,1920,1080,No,No,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+Asus,Rog GL553VE-FY052T,Gaming,15.6,16,Windows 10,2.5,1600.0,Full HD,1920,1080,No,Yes,No,Intel,2.8,Core i7 7700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1050 Ti
+Dell,Latitude 5480,Notebook,14.0,4,Windows 10,1.6,875.0,Standard,1366,768,No,No,No,Intel,2.5,Core i5 7200U,500,0,HDD,No,Intel,HD Graphics 620
+Asus,Rog GL502VS,Gaming,15.6,16,Windows 10,2.34,2325.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,256,1024,SSD,HDD,Nvidia,GeForce GTX 1070
+Lenovo,V510-15IKB (i5-7200U/8GB/256GB/FHD/No,Notebook,15.6,8,No OS,2.3,573.0,Full HD,1920,1080,No,Yes,No,Intel,2.5,Core i5 7200U,256,0,SSD,No,Intel,HD Graphics 620
+Dell,XPS 13,2 in 1 Convertible,13.3,8,Windows 10,1.24,1813.0,Quad HD+,3200,1800,Yes,No,No,Intel,1.2,Core i5 7Y54,256,0,SSD,No,Intel,HD Graphics 615
+Dell,Inspiron 3552,Notebook,15.6,4,Linux,2.2,324.0,Standard,1366,768,No,No,No,Intel,1.6,Pentium Quad Core N3710,500,0,HDD,No,Intel,HD Graphics
+HP,255 G6,Notebook,15.6,4,Windows 10,1.86,399.0,Standard,1366,768,No,No,No,AMD,2.5,A6-Series 9220,500,0,HDD,No,AMD,Radeon R4 Graphics
+Lenovo,IdeaPad 310-15ISK,Notebook,15.6,6,Windows 10,2.4,569.0,Full HD,1920,1080,No,No,No,Intel,2.3,Core i3 6100U,128,0,SSD,No,Nvidia,GeForce 920MX
+Lenovo,ThinkPad L460,Notebook,14.0,8,Windows 10,1.9,1072.0,Full HD,1920,1080,No,Yes,No,Intel,2.3,Core i5 6200U,256,0,SSD,No,Intel,HD Graphics 520
+Dell,Inspiron 3552,Notebook,15.6,4,Windows 10,2.2,443.99,Standard,1366,768,No,No,No,Intel,1.6,Pentium Quad Core N3700,500,0,HDD,No,Intel,HD Graphics
+Asus,X541NA-GO020T (N3350/4GB/1TB/W10),Notebook,15.6,4,Windows 10,2.0,339.0,Standard,1366,768,No,No,No,Intel,1.1,Celeron Dual Core N3350,1024,0,HDD,No,Intel,HD Graphics 500
+Asus,Rog G752VT-GC073T,Gaming,17.3,16,Windows 10,4.0,1900.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 970M
+Dell,Vostro 3568,Notebook,15.6,4,Windows 10,2.29,490.0,Standard,1366,768,No,No,No,Intel,2.0,Core i3 6006U,500,0,HDD,No,Intel,HD Graphics 520
+Lenovo,B51-80 (i7-6500U/8GB/1008GB/Radeon,Notebook,15.6,8,Windows 7,2.32,895.0,Full HD,1920,1080,No,No,No,Intel,2.5,Core i7 6500U,1024,0,Hybrid,No,AMD,Radeon R5 M330
+MSI,GE62 Apache,Gaming,15.6,8,Windows 10,2.4,1229.0,Full HD,1920,1080,No,No,No,Intel,2.6,Core i7 6700HQ,128,1024,SSD,HDD,Nvidia,GeForce GTX 960M
+Lenovo,Yoga 500-14IBD,2 in 1 Convertible,14.0,4,Windows 10,1.8,833.01,Full HD,1920,1080,Yes,No,No,Intel,2.3,Core i5 6200U,128,0,SSD,No,Intel,HD Graphics 520
+Asus,ZenBook UX305CA-UBM1,Ultrabook,13.3,8,Windows 10,1.2,729.0,Full HD,1920,1080,No,Yes,No,Intel,0.9,Core M 6Y30,512,0,SSD,No,Intel,HD Graphics 515
+Dell,Inspiron 3567,Notebook,15.6,6,Windows 10,2.3,459.0,Standard,1366,768,No,No,No,Intel,2.4,Core i3 7100U,1024,0,HDD,No,Intel,HD Graphics 620
+Acer,Aspire ES1-531,Notebook,15.6,4,Linux,2.4,289.0,Standard,1366,768,No,No,No,Intel,1.6,Celeron Dual Core N3060,500,0,HDD,No,Intel,HD Graphics 400
+Dell,Inspiron 3552,Notebook,15.6,2,Windows 10,2.2,379.0,Standard,1366,768,No,No,No,Intel,1.6,Celeron Dual Core N3050,500,0,HDD,No,Intel,HD Graphics
+Lenovo,IdeaPad Y700-15ISK,Notebook,15.6,8,Windows 10,2.6,899.0,Full HD,1920,1080,No,Yes,No,Intel,2.6,Core i7 6700HQ,1024,0,HDD,No,Nvidia,GeForce GTX 960M
+HP,Pavilion 15-AW003nv,Notebook,15.6,6,Windows 10,2.04,549.99,Full HD,1920,1080,No,No,No,AMD,2.9,A9-Series 9410,1024,0,Hybrid,No,AMD,Radeon R7 M440
+Dell,Inspiron 3567,Notebook,15.6,8,Linux,2.3,805.99,Standard,1366,768,No,No,No,Intel,2.7,Core i7 7500U,1024,0,HDD,No,AMD,Radeon R5 M430
+HP,Stream 11-Y000na,Netbook,11.6,2,Windows 10,1.17,209.0,Standard,1366,768,No,No,No,Intel,1.6,Celeron Dual Core N3060,32,0,Flash Storage,No,Intel,HD Graphics 400
+Asus,X556UJ-XO044T (i7-6500U/4GB/500GB/GeForce,Notebook,15.6,4,Windows 10,2.2,720.32,Standard,1366,768,No,No,No,Intel,2.5,Core i7 6500U,500,0,HDD,No,Nvidia,GeForce 920M
+Lenovo,Yoga 500-14ISK,2 in 1 Convertible,14.0,4,Windows 10,1.8,638.0,Full HD,1920,1080,Yes,Yes,No,Intel,2.5,Core i7 6500U,128,0,SSD,No,Intel,HD Graphics 520
+Lenovo,Yoga 900-13ISK,2 in 1 Convertible,13.3,16,Windows 10,1.3,1499.0,Quad HD+,3200,1800,Yes,Yes,No,Intel,2.5,Core i7 6500U,512,0,SSD,No,Intel,HD Graphics 520
+Lenovo,IdeaPad 100S-14IBR,Notebook,14.0,2,Windows 10,1.5,229.0,Standard,1366,768,No,No,No,Intel,1.6,Celeron Dual Core N3050,64,0,Flash Storage,No,Intel,HD Graphics
+HP,15-AC110nv (i7-6500U/6GB/1TB/Radeon,Notebook,15.6,6,Windows 10,2.19,764.0,Standard,1366,768,No,No,No,Intel,2.5,Core i7 6500U,1024,0,HDD,No,AMD,Radeon R5 M330
+Asus,X553SA-XX031T (N3050/4GB/500GB/W10),Notebook,15.6,4,Windows 10,2.2,369.0,Standard,1366,768,No,No,No,Intel,1.6,Celeron Dual Core N3050,500,0,HDD,No,Intel,HD Graphics
