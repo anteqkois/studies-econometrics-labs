@@ -651,3 +651,23 @@ def test_coincidence(X, threshold=0.8, alpha=0.05):
     
     return results
 
+def test_t_student_significance(model, alpha=0.05, verbose=True):
+    if verbose:
+        print(f"\n{'='*40}")
+        print("TEST ISTOTNOŚCI PARAMETRÓW – t-Studenta")
+        print(f"{'='*40}")
+    
+    summary_df = model.summary2().tables[1]
+    insignificant_vars = summary_df[summary_df['P>|t|'] > alpha]
+    
+    if verbose:
+        if len(insignificant_vars) == 0:
+            print("✓ Wszystkie parametry są istotne (p ≤ α)")
+        else:
+            print(f"Znaleziono {len(insignificant_vars)} nieistotnych zmiennych (p > {alpha}):")
+            print(insignificant_vars[['Coef.', 'P>|t|']])
+    
+    return {
+        'insignificant': list(insignificant_vars.index),
+        'count': len(insignificant_vars)
+    }

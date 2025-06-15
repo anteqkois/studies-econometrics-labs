@@ -1,23 +1,41 @@
 import numpy as np
 import statsmodels.api as sm
+from tests import test_t_student_significance
+from build_model import build_model
 
-
-def logarithmic_transformation(X_hellwig, y_data_clean, verbose=True):
+def logarithmic_transformation(X_data, y_data_clean, build_model_fn, verbose=True):
     
     if verbose:
         print(f"\n{'='*60}")
-        print("ZASTOSOWANIE METODY NAPRAWCZEJ 1: TRANSFORMACJA LOGARYTMICZNA")
+        print("ZASTOSOWANIE METODY NAPRAWCZEJ: TRANSFORMACJA LOGARYTMICZNA")
         print(f"{'='*60}")
 
     y_log = np.log(y_data_clean)
-    X_hellwig_with_const = sm.add_constant(X_hellwig)
-    hellwig_model_log = sm.OLS(y_log, X_hellwig_with_const).fit()
     
+    return build_model_fn(X_data, y_log, verbose=True)
 
-    return hellwig_model_log, y_log
+def run_test_t_student_significance_and_remove(model, X_data, y_data_clean, verbose=True):
+    if verbose:
+        print(f"\n{'='*60}")
+        print("ZASTOSOWANIE METODY NAPRAWCZEJ: USUNIĘCIE NIEISTOTYCH ZMIENNYCH")
+        print(f"{'='*60}")
 
+    significance_results = test_t_student_significance(model, verbose=verbose)
+    
+    if verbose:
+        print(f"Usuwanie kolumn na podstawie testu t-Studenta: {significance_results['insignificant']}")
+        print(f"Liczba kolumn przed usunięciem: {X_data.shape[1]}")
+    
+    X_data = X_data.drop(columns=significance_results['insignificant'])
 
-def structural_break_correction(y_log, X_hellwig, break_point, verbose=True):
+    if verbose:
+        print(f"Liczba kolumn po usunięciu: {X_data.shape[1]}")
+
+    model, X_data_with_const, y_data_clean = build_model(X_data, y_data_clean, verbose=verbose)
+    
+    return model, X_data
+
+def structural_break_correction(y_log, X_data, break_point, build_model_fn, verbose=True):
 
     if verbose:
         print(f"\n{'='*60}")
@@ -25,21 +43,17 @@ def structural_break_correction(y_log, X_hellwig, break_point, verbose=True):
         print(f"{'='*60}")
 
     # Tworzenie interakcji wszystkich zmiennych z dummy grupy
-    X_interactions = X_hellwig.copy()
+    X_interactions = X_data.copy()
     group_dummy = (X_interactions.index >= break_point).astype(int)
     
     # Dodanie interakcji
-    for col in X_hellwig.columns:
-        X_interactions[f'{col}_group2'] = X_hellwig[col] * group_dummy
+    for col in X_data.columns:
+        X_interactions[f'{col}_group2'] = X_data[col] * group_dummy
     
     X_interactions['group_2'] = group_dummy
-    X_inter_with_const = sm.add_constant(X_interactions)
     
     # Model z interakcjami
-    interaction_model = sm.OLS(y_log, X_inter_with_const).fit()
-    
-    return interaction_model
-
+    return build_model_fn(X_interactions, y_log, verbose=True)
 
 def ramsey_reset_correction(X_hellwig, y_log, verbose=True):
     if verbose:

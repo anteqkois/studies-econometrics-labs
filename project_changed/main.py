@@ -240,11 +240,11 @@ categorical_cols = CAT_TOPK_COLS + CAT_SMALL_COLS
 rhs_terms = NUM_COLS + BIN_COLS + [f"C({c})" for c in categorical_cols]
 
 formula = "Price_euros ~ " + " + ".join(rhs_terms)
-print("\nFormuła OLS:\n", formula, "\n")
+# print("\nFormuła OLS:\n", formula, "\n")
 
 ols_model = smf.ols(formula=formula, data=df_clean).fit()
 
-print(ols_model.summary())
+# print(ols_model.summary())
 
 
 # ZADANIE 3: METODA DOBORU ZMIENNYCH
@@ -272,6 +272,13 @@ y_data = df_clean['Price_euros'].copy()
 X_encoded = create_dummy_vars(X_data, categorical_cols)
 print(f"Liczba zmiennych objaśniających po kodowaniu: {X_encoded.shape[1]}")
 
+# Zakładamy, że kolumny dummy mają prefixy odpowiadające nazwom kolumn kategorycznych
+DUMMY_GROUPS = {}
+for cat in categorical_cols:
+    DUMMY_GROUPS[cat] = [col for col in X_encoded.columns if col.startswith(cat + "_")]
+    
+# print(DUMMY_GROUPS)
+
 # Import metod naprawczych
 from corrective_methods import logarithmic_transformation, structural_break_correction, ramsey_reset_correction
 
@@ -280,5 +287,5 @@ if __name__ == "__main__":
     from model_creation import build_and_test_models
     
     # Przygotowanie danych dla modelu
-    build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COLS, df_clean)
+    build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COLS, DUMMY_GROUPS, df_clean)
 
