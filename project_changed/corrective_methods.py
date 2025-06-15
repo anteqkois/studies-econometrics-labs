@@ -36,23 +36,26 @@ def run_test_t_student_significance_and_remove(model, X_data, y_data_clean, verb
     return model, X_data
 
 def structural_break_correction(y_log, X_data, break_point, build_model_fn, verbose=True):
-
     if verbose:
         print(f"\n{'='*60}")
-        print("ZASTOSOWANIE METODY NAPRAWCZEJ 2: PRZEŁAMANIE STRUKTURALNE")
+        print("ZASTOSOWANIE METODY NAPRAWCZEJ 2: PRZEŁAMANIE STRUCTURALNE")
         print(f"{'='*60}")
 
-    # Tworzenie interakcji wszystkich zmiennych z dummy grupy
+    # Tworzenie dummy wskazującego drugą grupę
+    group_dummy = (X_data.index >= break_point).astype(int)
+
+    # Kopia danych + interakcje tylko dla sensownych kolumn
     X_interactions = X_data.copy()
-    group_dummy = (X_interactions.index >= break_point).astype(int)
-    
-    # Dodanie interakcji
+
     for col in X_data.columns:
+        # Pomiń kolumnę 'const' i ewentualnie wcześniej dodaną 'group_2'
+        if col.lower() == 'const' or col.lower() == 'group_2':
+            continue
         X_interactions[f'{col}_group2'] = X_data[col] * group_dummy
-    
-    X_interactions['group_2'] = group_dummy
-    
-    # Model z interakcjami
+
+    # Dodaj tylko raz group_2 (bez interakcji)
+    # X_interactions['group_2'] = group_dummy
+
     return build_model_fn(X_interactions, y_log, verbose=True)
 
 def ramsey_reset_correction(X_hellwig, y_log, verbose=True):

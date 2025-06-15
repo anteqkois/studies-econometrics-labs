@@ -279,9 +279,6 @@ for cat in categorical_cols:
     
 # print(DUMMY_GROUPS)
 
-# Import metod naprawczych
-from corrective_methods import logarithmic_transformation, structural_break_correction, ramsey_reset_correction
-
 if __name__ == "__main__":
     # Wywołanie model_creation.py do stworzenia i testowania modeli
     from model_creation import build_and_test_models

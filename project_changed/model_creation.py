@@ -232,18 +232,13 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     # # Usunięcie kolumny "GPU_company_Intel" ponieważ ma silną ujemną korelację (--0.72) z GPU_company_Nvidia
     # X_data = X_data.drop(columns=["GPU_company_Intel"])
     
-    # METODA NAPRAWCZA 2: Przełamanie strukturalne    
-    current_model, X_data, y_log = structural_break_correction(y_log, X_data, stability_results['break_point'], build_weighted_model, False)
+    # METODA NAPRAWCZA 5: Przełamanie strukturalne    
+    current_model, X_data, y_log = structural_break_correction(y_log, X_data, stability_results['break_point'], build_weighted_model, True)
     
-    # Testy po przełamaniu strukturalnym
-    X_interactions = X_data.copy()
-    group_dummy = (X_interactions.index >= stability_results['break_point']).astype(int)
-    for col in X_data.columns:
-        X_interactions[f'{col}_group2'] = X_data[col] * group_dummy
-    X_interactions['group_2'] = group_dummy
-    
-    diagnostic_results = run_diagnostic_tests(current_model, X_interactions, True)
-    stability_results = test_model_stability(current_model, y_log, X_interactions, True)
+    # # Testy po przełamaniu strukturalnym
+
+    diagnostic_results = run_diagnostic_tests(current_model, X_data, True)
+    stability_results = test_model_stability(current_model, y_log, X_data, True)
     
     # # METODA NAPRAWCZA 3: Korekta Ramsey RESET
     # current_model = ramsey_reset_correction(X_data, y_log)
