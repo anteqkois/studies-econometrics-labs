@@ -166,23 +166,6 @@ def test_model_stability(model, y_data, X_data, verbose=True):
 def run_test_t_student_significance(model, verbose=True):
     significance_results = test_t_student_significance(model, verbose=verbose)
 
-def print_test_summary(test_results, test_type="Testy diagnostyczne"):
-    """
-    Wyświetla krótkie podsumowanie wyników testów
-    """
-    print(f"\n{'='*50}")
-    print(f"PODSUMOWANIE: {test_type.upper()}")
-    print(f"{'='*50}")
-    
-    if 'summary' in test_results:
-        for result in test_results['summary']:
-            status_icon = "✓" if result['interpretation'].startswith("OK") else "⚠" if result['interpretation'].startswith("UWAGA") else "✗"
-            print(f"{status_icon} {result['test']}: {result['interpretation']}")
-    else:
-        print("Brak dostępnego podsumowania")
-    print(f"{'='*50}")
-
-
 def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COLS, DUMMY_GROUPS, df_clean):
     print("\n" + "="*60)
     print("ROZPOCZĘCIE BUDOWY I TESTOWANIA MODELI")
@@ -219,7 +202,7 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     stability_results = test_model_stability(current_model, y_log, X_data, False)
     
     # METODA NAPRAWCZA 4:
-    # Testy na normalność ulegŻy znacznej poprawie, widzimy, że są 3 zmienne z VIF > 10, dlatego na początku usuwamy tylko jedną
+    # Testy na normalność uległy znacznej poprawie, widzimy, że są 3 zmienne z VIF > 10, dlatego na początku usuwamy tylko jedną
     # Resztę zmiennych VIF > 10 pozostiwaimy poniewać:
     # model działa dobrze (R², testy reszt OK),
     # zmienna ma sens merytoryczny,
@@ -230,49 +213,30 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
 
     # plot_correlation_heatmap(X_data, target_variable="Price_euros")
     # # Usunięcie kolumny "GPU_company_Intel" ponieważ ma silną ujemną korelację (--0.72) z GPU_company_Nvidia
-    # X_data = X_data.drop(columns=["GPU_company_Intel"])
+    # X_data = X_data.drop(columns=["GPU_company_Nvidia"])
     
     # METODA NAPRAWCZA 5: Przełamanie strukturalne    
-    current_model, X_data, y_log = structural_break_correction(y_log, X_data, stability_results['break_point'], build_weighted_model, True)
+    current_model, X_interactions, y_log = structural_break_correction(y_log, X_data, stability_results['break_point'], build_weighted_model, False)
     
     # # Testy po przełamaniu strukturalnym
 
-    diagnostic_results = run_diagnostic_tests(current_model, X_data, True)
-    stability_results = test_model_stability(current_model, y_log, X_data, True)
+    diagnostic_results = run_diagnostic_tests(current_model, X_interactions, False)
+    stability_results = test_model_stability(current_model, y_log, X_interactions, False)
     
-    # # METODA NAPRAWCZA 3: Korekta Ramsey RESET
-    # current_model = ramsey_reset_correction(X_data, y_log)
+    # METODA NAPRAWCZA 6: Korekta Ramsey RESET
+    current_model, X_advanced, y_log = ramsey_reset_correction(X_interactions, y_log, build_model_fn=build_weighted_model, verbose=False)
+
     
     # # Finalne testy
-    # X_advanced = X_data.copy()
-    # continuous_vars = ['CPU_freq', 'SecondaryStorage']
-    # for var in continuous_vars:
-    #     if var in X_data.columns:
-    #         var_std = (X_data[var] - X_data[var].mean()) / X_data[var].std()
-    #         X_advanced[f'{var}_squared'] = var_std ** 2
+    diagnostic_results = run_diagnostic_tests(current_model, X_advanced, True)
+    stability_results = test_model_stability(current_model, y_log, X_advanced, True)
     
-    # if 'SecondaryStorage' in X_data.columns:
-    #     X_advanced['Storage_log'] = np.log(X_data['SecondaryStorage'] + 1)
+    # print(f"\n{'='*60}")
+    # print("ZAKOŃCZENIE BUDOWY I TESTOWANIA MODELI")
+    # print(f"{'='*60}")
+    # print(f"Końcowy model R²: {current_model.rsquared:.4f}")
+    # print(f"Końcowy model Adjusted R²: {current_model.rsquared_adj:.4f}")
+    # print(f"Końcowy model AIC: {current_model.aic:.4f}")
+    # print(f"Końcowy model BIC: {current_model.bic:.4f}")
     
-    # interactions = [
-    #     ('CPU_freq', 'Touchscreen'),
-    #     ('SecondaryStorage', 'IPSpanel')
-    # ]
-    
-    # for cont_var, bin_var in interactions:
-    #     if cont_var in X_data.columns and bin_var in X_data.columns:
-    #         var_std = (X_data[cont_var] - X_data[cont_var].mean()) / X_data[cont_var].std()
-    #         X_advanced[f'{cont_var}_x_{bin_var}'] = var_std * X_data[bin_var]
-    
-    # diagnostic_results = run_diagnostic_tests(current_model, X_advanced, True)
-    # stability_results = test_model_stability(current_model, y_log, X_advanced, True)
-    
-    # # print(f"\n{'='*60}")
-    # # print("ZAKOŃCZENIE BUDOWY I TESTOWANIA MODELI")
-    # # print(f"{'='*60}")
-    # # print(f"Końcowy model R²: {current_model.rsquared:.4f}")
-    # # print(f"Końcowy model Adjusted R²: {current_model.rsquared_adj:.4f}")
-    # # print(f"Końcowy model AIC: {current_model.aic:.4f}")
-    # # print(f"Końcowy model BIC: {current_model.bic:.4f}")
-    
-    # return current_model
+    return current_model

@@ -139,6 +139,7 @@ for col in CAT_TOPK_COLS:
     vc = df[col].value_counts()          # liczebność każdej kategorii
     top = vc.nlargest(TOP_K[col])        # TOP_K najpopularniejszych
     coverage = top.sum() / len(df) * 100       # % pokrycia obserwacji
+    print(f"Top kategorie {top}")
     
     # Podmieniamy rzadkie kategorie na 'Other'
     df[col] = df[col].where(df[col].isin(top.index), 'Other')
@@ -146,7 +147,11 @@ for col in CAT_TOPK_COLS:
     # Info
     # print(f"{col}: TOP {TOP_K[col]} kategorii obejmuje {coverage:.2f}% wierszy "
     #       f"({top.sum()} z {len(df)})")
-    
+
+# Podać też liczebność dla innych kategorycznych
+for col in CAT_SMALL_COLS:
+    vc = df[col].value_counts()          # liczebność każdej kategorii
+    print(f"Top kategorie {vc}")
 
 # Zmieniamy zmienne binarne na zero-jedynkowe i dodajemy do kolumn liczbowych
 df[BIN_COLS] = df[BIN_COLS].replace(BINARY_MAP).astype(int)
