@@ -47,6 +47,9 @@ def calculate_forecast_errors(model: RegressionResultsWrapper, X, y_log):
     Zwraca także obserwacje z największym i najmniejszym względnym błędem.
     """
     y_pred_log = model.predict(X)
+    # Wymuszamy rzutowanie na float
+    y_pred_log = pd.Series(y_pred_log).astype(float)
+    
     y_pred = np.exp(y_pred_log)
     y_true = np.exp(y_log)
 

@@ -6,10 +6,11 @@ import matplotlib.pyplot as plt
 
 from tests import test_heteroscedasticity, test_normality, test_vif, test_chow, test_ramsey_reset, test_runs, test_t_student_significance
 from helwig_model import hellwig_method
-from corrective_methods import logarithmic_transformation, structural_break_correction, ramsey_reset_correction, run_test_t_student_significance_and_remove
+from corrective_methods import logarithmic_transformation, structural_break_correction, add_structural_break_columns, ramsey_reset_correction, run_test_t_student_significance_and_remove
 from build_model import build_model, build_weighted_model
 from charts import plot_correlation_heatmap
 from predictions import calculate_forecast_errors
+from data_preparation import compare_columns
 
 def build_initial_model(X_encoded, y_data, DUMMY_GROUPS, verbose=True):
     if verbose:
@@ -167,7 +168,36 @@ def test_model_stability(model, y_data, X_data, verbose=True):
 def run_test_t_student_significance(model, verbose=True):
     significance_results = test_t_student_significance(model, verbose=verbose)
 
-def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COLS, DUMMY_GROUPS, df_clean):
+def align_test_columns(X_train, X_test):
+    """
+    Dopasowuje testowe dane do struktury danych treningowych:
+    - usuwa kolumny nadmiarowe
+    - dodaje brakujące kolumny z zerami
+    - ustawia tę samą kolejność kolumn
+    """
+    X_test_aligned = X_test.copy()
+
+    train_cols = set(X_train.columns)
+    test_cols = set(X_test.columns)
+
+    # Kolumny brakujące w testowym – dodaj
+    missing_cols = train_cols - test_cols
+    for col in missing_cols:
+        if col == 'const':
+            X_test_aligned[col] = 1.0
+        else:
+            X_test_aligned[col] = 0
+
+    # Kolumny nadmiarowe – usuń
+    extra_cols = test_cols - train_cols
+    X_test_aligned.drop(columns=extra_cols, inplace=True)
+
+    # Kolejność kolumn
+    X_test_aligned = X_test_aligned[X_train.columns]
+
+    return X_test_aligned
+
+def build_and_test_models(X_encoded, y_data, DUMMY_GROUPS, X_encoded_test, y_data_test):
     print("\n" + "="*60)
     print("ROZPOCZĘCIE BUDOWY I TESTOWANIA MODELI")
     print("="*60)
@@ -181,7 +211,7 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     
 
     # METODA NAPRAWCZA 1: Usunięcie nieistotnych zmiennych na podstawie testy t-Studenta
-    current_model, X_data, y_data_clean = run_test_t_student_significance_and_remove(current_model, X_data, y_data_clean, build_model, False)
+    current_model, X_data, y_data_clean, X_data_test, y_data_clean_test = run_test_t_student_significance_and_remove(current_model, X_data, y_data_clean, build_model, X_encoded_test, y_data_test, False)
 
     # Testy po usunięciu
     diagnostic_results = run_diagnostic_tests(current_model, X_data, False)
@@ -196,7 +226,7 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     stability_results = test_model_stability(current_model, y_data_clean, X_data, False)
 
     # METODA NAPRAWCZA 3: Transformacja logarytmiczna - w celu naprawy problemu z heteroskedastycznością -> nie naprawiły się, ale normalność się mocno naprawiła    
-    current_model, X_data, y_log = logarithmic_transformation(X_data, y_data_clean, build_weighted_model, False)
+    current_model, X_data, y_log, X_data_test, y_log_test = logarithmic_transformation(X_data, y_data_clean, build_weighted_model, X_data_test, y_data_clean_test, False)
     
     # Testy po transformacji logarytmicznej
     diagnostic_results = run_diagnostic_tests(current_model, X_data, False)
@@ -208,6 +238,7 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     # model działa dobrze (R², testy reszt OK),
     # zmienna ma sens merytoryczny,
     X_data = X_data.drop(columns=["CPU_company_Intel"])
+    X_data_test = X_data_test.drop(columns=["CPU_company_Intel"])
     
     diagnostic_results = run_diagnostic_tests(current_model, X_data, False)
     stability_results = test_model_stability(current_model, y_log, X_data, False)
@@ -218,6 +249,7 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     
     # METODA NAPRAWCZA 5: Przełamanie strukturalne    
     current_model, X_interactions, y_log = structural_break_correction(y_log, X_data, stability_results['break_point'], build_weighted_model, False)
+    X_interactions_test = add_structural_break_columns(X_data_test, break_point=stability_results['break_point'], train_index_like=X_interactions.index)
     
     # # Testy po przełamaniu strukturalnym
 
@@ -225,7 +257,7 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     stability_results = test_model_stability(current_model, y_log, X_interactions, False)
     
     # # METODA NAPRAWCZA 6: Korekta Ramsey RESET
-    current_model, X_advanced, y_log = ramsey_reset_correction(X_interactions, y_log, build_model_fn=build_weighted_model, verbose=False)
+    current_model, X_advanced, y_log, X_advanced_test, y_log_test = ramsey_reset_correction(X_interactions, y_log, build_weighted_model, X_interactions_test, y_log_test, verbose=False)
     # diagnostic_results = run_diagnostic_tests(current_model, X_advanced, False)
     # stability_results = test_model_stability(current_model, y_log, X_advanced, False)
     
@@ -243,7 +275,11 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     # print(f"Końcowy model Adjusted R²: {current_model.rsquared_adj:.4f}")
     # print(f"Końcowy model AIC: {current_model.aic:.4f}")
     # print(f"Końcowy model BIC: {current_model.bic:.4f}")
-    df_results = calculate_forecast_errors(current_model, X_advanced, y_log)
+    X_advanced_test_aligned = align_test_columns(X_advanced, X_advanced_test)
+    compare_columns(X_advanced, X_advanced_test_aligned, label1="train", label2="test")
+    
+    # df_results = calculate_forecast_errors(current_model, X_advanced, y_log)
+    df_results = calculate_forecast_errors(current_model, X_advanced_test_aligned, y_log_test)
     print(f"FORECAST")
     print(df_results)
     
