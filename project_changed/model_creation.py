@@ -9,6 +9,7 @@ from helwig_model import hellwig_method
 from corrective_methods import logarithmic_transformation, structural_break_correction, ramsey_reset_correction, run_test_t_student_significance_and_remove
 from build_model import build_model, build_weighted_model
 from charts import plot_correlation_heatmap
+from predictions import calculate_forecast_errors
 
 def build_initial_model(X_encoded, y_data, DUMMY_GROUPS, verbose=True):
     if verbose:
@@ -180,7 +181,7 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     
 
     # METODA NAPRAWCZA 1: Usunięcie nieistotnych zmiennych na podstawie testy t-Studenta
-    current_model, X_data = run_test_t_student_significance_and_remove(current_model, X_data, y_data_clean, False)
+    current_model, X_data, y_data_clean = run_test_t_student_significance_and_remove(current_model, X_data, y_data_clean, build_model, False)
 
     # Testy po usunięciu
     diagnostic_results = run_diagnostic_tests(current_model, X_data, False)
@@ -225,9 +226,13 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     
     # # METODA NAPRAWCZA 6: Korekta Ramsey RESET
     current_model, X_advanced, y_log = ramsey_reset_correction(X_interactions, y_log, build_model_fn=build_weighted_model, verbose=False)
-
+    # diagnostic_results = run_diagnostic_tests(current_model, X_advanced, False)
+    # stability_results = test_model_stability(current_model, y_log, X_advanced, False)
+    
     
     # # # Finalne testy
+    # run_test_t_student_significance(current_model, True)
+    # current_model, X_advanced, y_log = run_test_t_student_significance_and_remove(current_model, X_advanced, y_log, build_weighted_model, True)
     # diagnostic_results = run_diagnostic_tests(current_model, X_advanced, True)
     # stability_results = test_model_stability(current_model, y_log, X_advanced, True)
     
@@ -238,5 +243,8 @@ def build_and_test_models(X_encoded, y_data, categorical_cols, NUM_COLS, BIN_COL
     # print(f"Końcowy model Adjusted R²: {current_model.rsquared_adj:.4f}")
     # print(f"Końcowy model AIC: {current_model.aic:.4f}")
     # print(f"Końcowy model BIC: {current_model.bic:.4f}")
+    df_results = calculate_forecast_errors(current_model, X_advanced, y_log)
+    print(f"FORECAST")
+    print(df_results)
     
     return current_model

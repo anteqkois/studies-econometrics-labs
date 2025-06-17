@@ -15,7 +15,7 @@ def logarithmic_transformation(X_data, y_data_clean, build_model_fn, verbose=Tru
     
     return build_model_fn(X_data, y_log, verbose=True)
 
-def run_test_t_student_significance_and_remove(model, X_data, y_data_clean, verbose=True):
+def run_test_t_student_significance_and_remove(model, X_data, y_data_clean, build_model_fn, verbose=True):
     if verbose:
         print(f"\n{'='*60}")
         print("ZASTOSOWANIE METODY NAPRAWCZEJ: USUNIĘCIE NIEISTOTYCH ZMIENNYCH")
@@ -32,9 +32,7 @@ def run_test_t_student_significance_and_remove(model, X_data, y_data_clean, verb
     if verbose:
         print(f"Liczba kolumn po usunięciu: {X_data.shape[1]}")
 
-    model, X_data_with_const, y_data_clean = build_model(X_data, y_data_clean, verbose=verbose)
-    
-    return model, X_data
+    return build_model_fn(X_data, y_data_clean, verbose=verbose)
 
 def structural_break_correction(y_log, X_data, break_point, build_model_fn, verbose=True):
     if verbose:
