@@ -19,16 +19,7 @@ DUMMY_GROUPS = {
     for cat in categorical_cols
 }
 
-# print(f"TRENINGOWE DANE" + "="* 50)
-# print(X_encoded_train.head())
-# print(y_data_train.head())
-# print("="* 60)
-
 X_encoded_test, y_data_test, top_k_dict_test, fitted_top_categories_test, df_clean_test = preprocess_data(df_raw_test, False, top_k_dict, fitted_top_categories)
-# print(f"TESTOWE DANE" + "="* 50)
-# print(X_encoded_test.head())
-# print(y_data_test.head())
-# print("="* 60)
 
 compare_columns(X_encoded_train, X_encoded_test, label1="train", label2="test")
 
