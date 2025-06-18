@@ -662,7 +662,7 @@ def test_t_student_significance(model, alpha=0.05, verbose=True):
     
     if verbose:
         if len(insignificant_vars) == 0:
-            print("✓ Wszystkie parametry są istotne (p ≤ α)")
+            print("Wszystkie parametry są istotne (p ≤ α)")
         else:
             print(f"Znaleziono {len(insignificant_vars)} nieistotnych zmiennych (p > {alpha}):")
             print(insignificant_vars[['Coef.', 'P>|t|']])

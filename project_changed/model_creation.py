@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 from tests import test_heteroscedasticity, test_normality, test_vif, test_chow, test_ramsey_reset, test_runs, test_t_student_significance
 from helwig_model import hellwig_method
-from corrective_methods import logarithmic_transformation, structural_break_correction, add_structural_break_columns, ramsey_reset_correction, run_test_t_student_significance_and_remove
+from corrective_methods import logarithmic_transformation, run_test_t_student_significance_and_remove_v2, structural_break_correction, add_structural_break_columns, ramsey_reset_correction, run_test_t_student_significance_and_remove
 from build_model import build_model, build_weighted_model
 from charts import plot_correlation_heatmap
 from predictions import calculate_forecast_errors
@@ -261,12 +261,14 @@ def build_and_test_models(X_encoded, y_data, DUMMY_GROUPS, X_encoded_test, y_dat
     # diagnostic_results = run_diagnostic_tests(current_model, X_advanced, False)
     # stability_results = test_model_stability(current_model, y_log, X_advanced, False)
     
-    
+    current_model, X_advanced, y_log = run_test_t_student_significance_and_remove_v2(current_model, X_advanced, y_log, build_weighted_model, False)
+    current_model, X_advanced, y_log = run_test_t_student_significance_and_remove_v2(current_model, X_advanced, y_log, build_weighted_model, False)
+
     # # # Finalne testy
-    # run_test_t_student_significance(current_model, True)
-    # current_model, X_advanced, y_log = run_test_t_student_significance_and_remove(current_model, X_advanced, y_log, build_weighted_model, True)
-    # diagnostic_results = run_diagnostic_tests(current_model, X_advanced, True)
-    # stability_results = test_model_stability(current_model, y_log, X_advanced, True)
+
+    run_test_t_student_significance(current_model, True)
+    # diagnostic_results = run_diagnostic_tests(current_model, X_advanced, False)
+    # stability_results = test_model_stability(current_model, y_log, X_advanced, False)
     
     # print(f"\n{'='*60}")
     # print("ZAKOŃCZENIE BUDOWY I TESTOWANIA MODELI")
@@ -275,12 +277,12 @@ def build_and_test_models(X_encoded, y_data, DUMMY_GROUPS, X_encoded_test, y_dat
     # print(f"Końcowy model Adjusted R²: {current_model.rsquared_adj:.4f}")
     # print(f"Końcowy model AIC: {current_model.aic:.4f}")
     # print(f"Końcowy model BIC: {current_model.bic:.4f}")
-    X_advanced_test_aligned = align_test_columns(X_advanced, X_advanced_test)
-    compare_columns(X_advanced, X_advanced_test_aligned, label1="train", label2="test")
+    # X_advanced_test_aligned = align_test_columns(X_advanced, X_advanced_test)
+    # compare_columns(X_advanced, X_advanced_test_aligned, label1="train", label2="test")
     
-    # df_results = calculate_forecast_errors(current_model, X_advanced, y_log)
-    df_results = calculate_forecast_errors(current_model, X_advanced_test_aligned, y_log_test)
-    print(f"FORECAST")
-    print(df_results)
+    # # df_results = calculate_forecast_errors(current_model, X_advanced, y_log)
+    # df_results = calculate_forecast_errors(current_model, X_advanced_test_aligned, y_log_test)
+    # print(f"FORECAST")
+    # print(df_results)
     
     return current_model

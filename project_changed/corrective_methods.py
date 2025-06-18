@@ -38,6 +38,26 @@ def run_test_t_student_significance_and_remove(model, X_data, y_data_clean, buil
     model, X_data, y_data = build_model_fn(X_data, y_data_clean, verbose=verbose)
     return model, X_data, y_data, X_data_test, y_data_clean_test,
 
+def run_test_t_student_significance_and_remove_v2(model, X_data, y_data_clean, build_model_fn, verbose=True):
+    if verbose:
+        print(f"\n{'='*60}")
+        print("ZASTOSOWANIE METODY NAPRAWCZEJ: USUNIĘCIE NIEISTOTYCH ZMIENNYCH")
+        print(f"{'='*60}")
+
+    significance_results = test_t_student_significance(model, verbose=verbose)
+    
+    if verbose:
+        print(f"Usuwanie kolumn na podstawie testu t-Studenta: {significance_results['insignificant']}")
+        print(f"Liczba kolumn przed usunięciem: {X_data.shape[1]}")
+    
+    X_data = X_data.drop(columns=significance_results['insignificant'])
+
+    if verbose:
+        print(f"Liczba kolumn po usunięciu: {X_data.shape[1]}")
+
+    model, X_data, y_data = build_model_fn(X_data, y_data_clean, verbose=verbose)
+    return model, X_data, y_data,
+
 def structural_break_correction(y_log, X_data, break_point, build_model_fn, verbose=True):
     if verbose:
         print(f"\n{'='*60}")
